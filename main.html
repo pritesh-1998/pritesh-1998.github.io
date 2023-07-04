@@ -1,0 +1,200 @@
+<html lang="en">
+  <head>
+    <title>Bootstrap Tooltip</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap");
+      body {
+      }
+      ul {
+        position: sticky;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: #e10600;
+        box-shadow: 0px 4px 10px 0px;
+      }
+      li {
+        float: right;
+        display: block;
+        padding: 5;
+        font-size: 20;
+      }
+      #li1 {
+        float: left;
+      }
+
+      li a {
+        color: rgb(250, 250, 250);
+        margin: 5;
+        font-style: inherit;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 28px;
+        font-weight: 550;
+      }
+      #qwe {
+        margin: 0;
+        padding: 0;
+      }
+      a:hover {
+        background-color: #080808;
+        color: rgb(251, 251, 251);
+        padding: 8;
+        text-decoration: none;
+      }
+
+      .imgcard {
+        width: 700px;
+        height: 400px;
+        padding: 20px;
+        border-style: dashed;
+        text-align: center;
+        position: relative;
+        top: 100;
+        left: 290;
+      }
+      #imgg {
+        float: center;
+        height: 300px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+      }
+      #name {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 50px;
+        font-weight: 550;
+        color: #030303;
+        text-shadow: #383737 1px 0 5px;
+      }
+      .second {
+        width: 100%;
+        height: 1000px;
+        background: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <ul class="list-inline" id="qwe">
+        <li>
+          <img
+            src="logo-ig-png-32464.png"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="instagramlogo"
+          />
+        </li>
+        <li id="li1">
+          <a
+            class="name1"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="instagram"
+            >Pritesh Lathia</a
+          >
+        </li>
+        <li>
+          <a
+            class="about"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="home"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            class="resume"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="contact"
+            >Resume</a
+          >
+        </li>
+        <li>
+          <a
+            class="skill"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="about"
+            >Skill</a
+          >
+        </li>
+        <li>
+          <a
+            class="participation"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="about"
+            >Participation</a
+          >
+        </li>
+        <li>
+          <a
+            class="home"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="instagram"
+            >Home</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div id="parallax">
+      <div class="imgcard">
+        <a href=""> <img id="imgg" src="max.jpg" alt="" />> </a>
+        <h2 id="name">Max Verstappen</h2>
+      </div>
+
+      <!-- <div class="third" style="width: 90%; height: 300px; background: #992">
+        Hi
+      </div>
+      <div class="fourth" style="width: 90%; height: 300px; background: #922">
+        Hi
+      </div>
+      <div class="fifth" style="width: 90%; height: 300px; background: #421">
+        Hi
+      </div>
+      <div class="sixth" style="width: 90%; height: 300px; background: #889">
+        hi
+      </div> -->
+    </div>
+
+    <script>
+      $(".name1").click(function () {
+        $("html,body").animate(
+          { scrollTop: $(".second").offset().top },
+          "slow"
+        );
+      });
+      $(".home").click(function () {
+        $("html,body").animate({ scrollTop: $(".third").offset().top }, "slow");
+      });
+      $(".participation").click(function () {
+        $("html,body").animate(
+          { scrollTop: $(".fourth").offset().top },
+          "slow"
+        );
+      });
+      $(".skill").click(function () {
+        $("html,body").animate({ scrollTop: $(".fifth").offset().top }, "slow");
+      });
+      $(".resume").click(function () {
+        $("html,body").animate({ scrollTop: $(".sixth").offset().top }, "slow");
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>

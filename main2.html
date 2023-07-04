@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+      }
+
+      li {
+          float: left;
+        }
+
+        li a {
+            display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+    
+      .active {
+        background-color: #d22c2c;
+      }
+      #imgg {
+        float: center;
+        height: 300px;
+        border:5px groove rgb(0, 0, 0);
+        margin-top: 30px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+      }
+      #email{
+        float: right;
+        font-size: 4px ;
+        padding-left: 110px;
+      }
+      #mainemail{
+        float: left;
+     
+    }
+    #first{
+      padding-left: 100px;
+    }
+    #name{
+    font-size: 40px;
+    font-family: "Helvetica Neue";
+    }
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+#f { background:rgb(30,30,40); }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #d22c2c;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+.card {
+  /* Add shadows to create the "card" effect */
+  float: left;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-size: 10p;
+    margin: 60px;
+    text-align: center;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+#contacth1{
+    font-size: 40px;
+    color: #CC4949;
+}
+        </style>
+    </head>
+    <body>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#skills">Participation</a>
+            </li>
+            <li>
+                <a href="#projects">Education</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li style="float: right">
+                <a class="active" href="#about">Pritesh Lathia</a>
+            </li>
+        </ul>
+        <header>
+            <img id="imgg" src="image.jpg" alt="">
+        </a>
+        <br>
+        <h2 id="name">Pritesh Lathia</h2>
+        <br>
+        <!-- <hr width="800px;" 
+        color="black" 
+        size="2" 
+        align="center">  -->
+        <div id="mainemail">
+            <div id="email">
+                <button class="button-54" role="button">
+                    <a style="color: #111;" href="mailto:plathia1998@gmail.com">
+                        <i id="first" class="fa fa-envelope" style="font-size:22px;padding: 5px;">&nbsp;plathia1998@gmail.com</i>
+                    </a>
+                    <!-- <h2>plathia1998@gmail.com</h2> -->
+                </button>
+            </div>
+            <div id="email">
+                <button class="button-54" role="button">
+                    <a style="color: #111;" href="https://github.com/pritesh-1998">
+                        <i class="fa fa-github" style="font-size:22px;padding: 5px;">&nbsp;pritesh-1998</i>
+                    </a>
+                    <!-- <h2>plathia1998@gmail.com</h2> -->
+                </button>
+            </div>
+            <div id="email">
+                <button class="button-54" role="button">
+                    <a style="color: #111;" href="">
+                        <i class="fa fa-phone" style="font-size:22px;padding: 5px;">&nbsp;7666651025</i>
+                    </a>
+                    <!-- <h2>7666651025</h2> -->
+                </button>
+            </div>
+            <div id="email">
+                <button class="button-54" role="button">
+                    <a style="color: #111;" href="https://www.linkedin.com/in/pritesh-lathia-959612211/">
+                        <i class="fa fa-linkedin" style="font-size:22px;padding: 5px;">&nbsp;Pritesh-lathia</i>
+                    </a>
+                    <!-- <h2>plathia1998@gmail.com</h2> -->
+                </button>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                My name is Pritesh Lathia. I'm an BE student at Silver Oak University Computer Department. I was born and raised in Mumbai.
+I Pursued Diploma in Computer Engineering from K.J Somaiya College Of Engineering and Technology, Mumbai University.
+I like to travel. I believe travelling gives you a new perspective to everything. You get to know a lot about the different cultures, the cuisines, their history, the language and all the small unique things every place has to offer.
+            </p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Participation</h2>
+        <div class="ph1">
+            <h1>
+                1) Smart  India  Hackathon  (SIH)  May 2022
+            </h1>
+            <h1>
+                2) National  Level  Project  Competition "KJSIEIT-INTECH2K22” Apr 2022
+            </h1>
+            <h1>
+                3) MULTICON-W  Industry Oriented Technology  Workshop  on  ARTIFICIAL INTELLIGENCE Feb 2022
+            </h1>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Education</h2>
+        <div class="card">
+            <div class="container">
+                <h4>
+                    <b>
+                        SSC
+                    </b>
+                </h4>
+                <p>
+                    SRI MA VIDYALAYA
+                </p>
+                <p>
+                    2019 | Mumbai
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="container">
+                <h4>
+                    <b>Diploma</b>
+                </h4>
+                <p>
+                    K.J SOMAIYA POLYTECHNIC
+                </p>
+                <p>2022 | Mumbai</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="container">
+                <h4>
+                    <b>BE in Computer Engineering</b>
+                </h4>
+                <p>ADITYA SILVER OAK INSTITUTE OF TECHNOLOGY</p>
+                <p>Present | Ahmedabad</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2 id="contacth1">Contact Me</h2>
+        <form>
+            <input
+                name="name"
+                type="text"
+                class="feedback-input"
+                placeholder="Name"
+            >
+            <input
+                name="email"
+                type="text"
+                class="feedback-input"
+                placeholder="Email"
+            >
+            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+            <input type="submit" value="SUBMIT">
+        </form>
+        <!-- <form id="contact-form">
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+            >
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+            >
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form> -->
+    </section>
+    <footer>
+        <p>&copy; 2023 Pritesh Lathia</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
